@@ -15,7 +15,16 @@ export default function RoomScene() {
                     addToInventory('key');
                     openModal('You found a key under the seat cusion!');
                 }}
-                className="absolute top-[62%] left-[27%] w-[7%] h-[2%] rounded-full border-transparent bg-transparent hover:border-yellow-400"
+                className="
+                    absolute top-[62%] left-[27%] w-[7%] h-[2%]
+                    appearance-none
+                    border-2 border-transparent
+                    hover:border-yellow-400 focus:border-yellow-400
+                    bg-transparent
+                    rounded-md
+                    cursor-pointer
+                    transition-all duration-150
+                "
             />
         </div>
     );
